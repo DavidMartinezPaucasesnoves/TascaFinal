@@ -11,10 +11,30 @@
     src: url("../fonts/Coolvetica\ Rg\ It.otf");
 }
 
+
+
+
 body {
+    margin: 0px;
     font-family: 'Coolvetica';
+}
+
+main {
+    display: flex;
+    gap: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    height: 100vh;
+
+    background-color: var(--color-primary);
 }
 
 button {
     font-family: 'Coolvetica';
+    
 }
