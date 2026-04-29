@@ -32,6 +32,35 @@ main {
     height: 100vh;
 
     background-color: var(--color-primary);
+    color: var(--text-color-secondary);
+}
+
+.menu h2{
+    padding-left: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+li {
+    margin-bottom: 20px;
+    
+}
+
+a {
+    color: var(--text-color-secondary);
+    text-decoration: none;
+}
+
+li div {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+li div:hover{
+    background-color: rgb(from var(--color-primary) calc(r - 20) calc(g - 20) calc(b - 20));
 }
 
 button {
