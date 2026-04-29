@@ -17,6 +17,7 @@
 body {
     margin: 0px;
     font-family: 'Coolvetica';
+    background-color: #f6f6f6;
 }
 
 main {
@@ -33,6 +34,8 @@ main {
 
     background-color: var(--color-primary);
     color: var(--text-color-secondary);
+
+    box-shadow: 5px 5px 10px #cdcdcd;
 }
 
 .menu h2{
@@ -66,4 +69,20 @@ li div:hover{
 
 button {
     font-family: 'Coolvetica';
+}
+
+.workspace {
+    display: flex;
+    flex-direction: column;
+}
+
+.lista-actividades {
+    background-color: var(--color-secondary);
+    padding: 20px;
+    width: 75vw;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 5px 10px #cdcdcd;
+    border-radius: 10px;
 }
