@@ -46,7 +46,6 @@ ul {
 
 li {
     margin-bottom: 20px;
-    
 }
 
 a {
@@ -57,13 +56,14 @@ a {
 li div {
     padding: 10px;
     border-radius: 10px;
+      transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 li div:hover{
     background-color: rgb(from var(--color-primary) calc(r - 20) calc(g - 20) calc(b - 20));
+    transform: scale(1.05)
 }
 
 button {
     font-family: 'Coolvetica';
-    
 }
