@@ -32,6 +32,7 @@ main {
     gap: 20px;
     padding: 20px;
     height: 100vh;
+    width: 15%;
 
     background-color: var(--color-primary);
     color: var(--text-color-secondary);
@@ -116,4 +117,21 @@ li div:hover{
 .lista-actividades input {
     border-radius: 10px;
     font-family: 'Coolvetica';
+}
+
+.categorias {
+    display: flex;
+}
+
+.workspace-categorias {
+    display: flex;
+    flex-direction: column;
+}
+
+.workspace-categorias h1 {
+    text-align: center;
+}
+
+.categorias-box {
+    
 }
