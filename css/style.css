@@ -68,12 +68,12 @@ li div:hover{
     transform: scale(1.05)
 }
 
-.workspace {
+.workspace-index {
     display: flex;
     flex-direction: column;
 }
 
-.workspace h1 {
+.workspace-index h1 {
     text-align: center;
 }
 
