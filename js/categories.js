@@ -7,12 +7,35 @@ function guardarCategoria() {
     return;
   }
 
-  var nombresViejos = localStorage.getItem('misNombres') || "";
-  var coloresViejos = localStorage.getItem('misColores') || "";
+  var nombresViejos = localStorage.getItem('Nombres') || "";
+  var coloresViejos = localStorage.getItem('Colores') || "";
 
-  localStorage.setItem('misNombres', nombresViejos + nombre + ",");
-  localStorage.setItem('misColores', coloresViejos + color + ",");
+  localStorage.setItem('Nombres', nombresViejos + nombre + ",");
+  localStorage.setItem('Colores', coloresViejos + color + ",");
 
   alert("Guardado!");
   document.getElementById('nombre-cat').value = "";
+}
+
+
+window.onload = function() {
+  var select = document.getElementById('selector-categorias');
+  
+  var datos = localStorage.getItem('Nombres');
+
+  if (datos) {
+    var lista = datos.split(','); 
+
+    for (var i = 0; i < lista.length; i++) {
+      var nombre = lista[i];
+
+      if (nombre != "") {
+        var nuevaOpcion = document.createElement('option');
+        
+        nuevaOpcion.text = nombre;
+        nuevaOpcion.value = nombre;
+        select.add(nuevaOpcion);
+      }
+    }
+  }
 }
