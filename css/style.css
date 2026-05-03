@@ -126,6 +126,9 @@ li div:hover{
 .workspace-categorias {
     display: flex;
     flex-direction: column;
+    width: 50%;
+    padding-left: 15%;
+    align-items: center;
 
 }
 
@@ -138,7 +141,15 @@ li div:hover{
     padding: 20px;
     display: flex;
     flex-direction: column;
+    box-shadow: 0px 5px 10px #cdcdcd;
     border-radius: 18px;
+    width: 300px;
+    margin-top: 10%;
+}
+
+.categorias-box input {
+    border-radius: 6px;
+    height: 20px;
 }
 
 .categorias-box button {
@@ -163,4 +174,14 @@ li div:hover{
     flex-direction: row;
     align-items: center;
     gap: 20px;
+}
+
+.color-categoria input {
+    cursor: pointer;
+    height: 27px;
+}
+
+.lista-categorias {
+    min-height: 50px;
+    background-color: var(--color-secondary);
 }
