@@ -248,3 +248,19 @@ li div:hover{
     background-color: rgb(from var(--color-primary) calc(r - 20) calc(g - 20) calc(b - 20));
     transform: scale(1.02)
 }
+
+.eliminar-categoria {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Coolvetica';
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.eliminar-categorias:hover {
+    background-color: rgb(from #ff4d4d calc(r - 20) calc(g - 20) calc(b - 20));
+    transform: scale(1.02)
+}
