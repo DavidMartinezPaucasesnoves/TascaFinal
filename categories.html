@@ -21,16 +21,17 @@
             <h1>Gestión de Categorías</h1>
             <div class="categorias-box">
                 <p>Nueva Categoría:</p>
-                <input type="text">
+                <input type="text" id="nombre-cat">
                 <div class="color-categoria">
                     <p>Color de la Categoría:</p>
-                    <input type="color" name="" id="">
+                    <input type="color" id="color-cat">
                 </div>
-                <button>Añadir Categoría</button>
+                <button onclick="guardarCategoria()">Añadir Categoría</button>
             </div>
             <div class="lista-categorias">
             </div>
         </div>
     </section>
+    <script src="js/categories.js"></script>   
 </body>
 </html>
