@@ -126,6 +126,7 @@ li div:hover{
 .workspace-categorias {
     display: flex;
     flex-direction: column;
+
 }
 
 .workspace-categorias h1 {
@@ -133,5 +134,33 @@ li div:hover{
 }
 
 .categorias-box {
-    
+    background-color: var(--color-secondary);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 18px;
+}
+
+.categorias-box button {
+    background-color: var(--color-primary);
+    color: var(--text-color-secondary);
+    font-family: 'Coolvetica';
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.categorias-box button:hover {
+    background-color: rgb(from var(--color-primary) calc(r - 20) calc(g - 20) calc(b - 20));
+    transform: scale(1.02)
+}
+
+.color-categoria {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
 }
