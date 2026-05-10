@@ -31,7 +31,7 @@ main {
     flex-direction: column;
     gap: 20px;
     padding: 20px;
-    height: 100vh;
+    height: 1000px;
     width: 15%;
 
     background-color: var(--color-primary);
@@ -117,6 +117,23 @@ li div:hover{
 .lista-actividades input {
     border-radius: 10px;
     font-family: 'Coolvetica';
+}
+
+#contenedor-pendientes, #contenedor-acabadas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.tarea-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 180px;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .categorias {

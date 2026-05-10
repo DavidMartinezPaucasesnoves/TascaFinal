@@ -21,25 +21,24 @@
             <h1>Crear Tarea Nueva</h1>
             <div class="tareas-box">
                 <p>Título:</p>
-                <input type="text">
+                <input type="text" id="titulo-tarea">
                 <p>Descripción:</p>
-                <input type="text">
+                <input type="text" id="desc-tarea">
                 <p>Fecha:</p>
-                <input type="date" name="" id="">
+                <input type="date" id="fecha-tarea">
                 <p>Categoría:</p>
                 <select name="categorias" id="selector-categorias" class="dropdown-select">
                 </select>
                 <p>Prioridad:</p>
-                <select id="prioridad" name="prioridad" class="dropdown-select">
+                <select id="prioridad-tarea" name="prioridad" class="dropdown-select">
                     <option value="Baja">Baja</option>
                     <option value="Media">Media</option>
                     <option value="Alta">Alta</option>
                 </select>
-                <button>Crear Tarea</button>
+                <button onclick="guardarTarea()">Crear Tarea</button>
             </div>
         </div>
     </section>
-    <script src="js/categories.js"></script>
     <script src="js/storage.js"></script>
     <script src="js/form-tasca.js"></script>
 </body>

@@ -20,20 +20,28 @@
             <div>
                 <h1>Lista de Actividades</h1>
                 <div class="lista-actividades">
-                    <button>Crear Nueva Tarea</button>
+                    <button onclick="window.location.href='crear-tasca.html'">Crear Nueva Tarea</button>
                     <div class="subir-archivo">
                         <input type="search" placeholder="   nombre del archivo">
                         <button>Subir</button>
                     </div>
                 </div>
             </div>
-                <div>
-                    <h2>Tareas Pendientes</h2>
-                </div>
+            <div>
+                <h2>Tareas Pendientes</h2>
+                <div id="contenedor-pendientes"></div>
+            </div>
             <div>
                 <h2>Tareas Acabadas</h2>
+                <div id="contenedor-acabadas"></div>
+                <div>
+                    <canvas id="myChart"></canvas>
+                </div>
             </div>
         </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

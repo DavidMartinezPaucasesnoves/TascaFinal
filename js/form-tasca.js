@@ -1,31 +1,30 @@
 window.onload = function() {
     var select = document.getElementById('selector-categorias');
-    
-
-    if (!select) {
-        console.error("No se encontró el elemento con ID 'selector-categorias'");
-        return;
-    }
-
     var datosNombres = localStorage.getItem('Nombres');
-    console.log("Datos recuperados:", datosNombres);
-
-    if (datosNombres) {
-        select.innerHTML = '<option value="">Selecciona una...</option>';
-        
-        var listaN = datosNombres.split(',');
-        
-        for (var i = 0; i < listaN.length; i++) {
-            var nombre = listaN[i].trim();
-            
+    if (datosNombres && select) {
+        var lista = datosNombres.split(',');
+        lista.forEach(function(nombre) {
             if (nombre !== "") {
-                var nuevaOpcion = document.createElement('option');
-                nuevaOpcion.text = nombre;
-                nuevaOpcion.value = nombre;
-                select.add(nuevaOpcion);
+                var opt = document.createElement('option');
+                opt.text = nombre;
+                opt.value = nombre;
+                select.add(opt);
             }
-        }
-    } else {
-        console.warn("No hay categorías guardadas en localStorage.");
+        });
     }
 };
+
+function guardarTarea() {
+    var tareas = JSON.parse(localStorage.getItem('Tareas')) || [];
+    var nueva = {
+        titulo: document.getElementById('titulo-tarea').value,
+        descripcion: document.getElementById('desc-tarea').value,
+        fecha: document.getElementById('fecha-tarea').value,
+        categoria: document.getElementById('selector-categorias').value,
+        prioridad: document.getElementById('prioridad-tarea').value,
+        completada: false
+    };
+    tareas.push(nueva);
+    localStorage.setItem('Tareas', JSON.stringify(tareas));
+    window.location.href = "index.html";
+}
